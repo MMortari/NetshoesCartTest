@@ -1,0 +1,298 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  height: 100%;
+}
+
+.bg-yellow {
+  background: yellow;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.form-together {
+  margin-bottom: 25px;
+}
+
+.form-together input {
+  border: 1px solid #ccc;
+  border-right: #fff;
+  border-radius: 1px;
+  padding: 10px;
+  max-width: calc(350px - 38px);
+}
+
+.form-together button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-left: #fff;
+  background: #fff;
+  margin-left: -5px;
+  cursor: pointer;
+}
+
+.bag-icon,
+.bag-icon-close {
+  color: #dfbd00;
+  border: none;
+  background: none;
+  font-size: 25pt;
+  cursor: pointer;
+}
+
+.bag-icon {
+  position: absolute;
+  top: 20px;
+  right: 65px;
+  background: #202025;
+  padding: 10px 14px;
+  border-radius: 50%;
+}
+
+.bag-icon-close {
+  font-size: 20pt;
+  margin: 15px;
+}
+
+.search {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.search h3 {
+  font-size: 30pt;
+  margin-bottom: 0;
+}
+
+.search small {
+  color: #b2b2b2;
+}
+
+.product {
+  border: 1px solid #fff;
+  text-align: center;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.product:hover {
+  border: 1px solid #eee;
+  ;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product h3 {
+  margin: 5px;
+  font-size: 14pt;
+}
+
+.product hr {
+  width: 40px;
+  height: 3px;
+  background: #dfbd00;
+  border: none;
+}
+
+.product p {
+  margin: 7px 0 0 0;
+  color: #313131;
+  font-weight: bold;
+  font-size: 22pt;
+}
+
+.product p small {
+  color: #313131;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+.product small {
+  color: #969696;
+  font-size: 13pt;
+}
+
+.bag {
+  display: none;
+  background-color: #202025;
+  color: #fff;
+  position: absolute;
+  max-height: 1000vh;
+  width: 40%;
+  top: 0;
+  right: 0;
+}
+
+.bag.active {
+  display: block;
+}
+
+.bag h1 i {
+  font-size: 33pt
+}
+
+.bag .qtdeSacola {
+  background: #dfbd00;
+  color: #000;
+  border-radius: 50%;
+  font-size: 10pt;
+  padding: 0 5px;
+  margin-left: -23px;
+}
+
+.bag ul {
+  list-style: none;
+  padding: 0;
+}
+
+.bag ul li {
+  border-top: 1px solid #131316;
+  display: flex;
+  flex-direction: row;
+}
+
+.bag ul li:hover {
+  background: #131316;
+}
+
+.bag ul li .img {
+  width: 30%;
+  padding: 15px;
+}
+
+.bag ul li .content {
+  width: 40%;
+  padding: 15px;
+}
+
+.bag ul li .final {
+  width: 30%;
+  padding: 15px;
+  text-align: right;
+}
+
+.bag ul li .img img {
+  width: 80px;
+}
+
+.bag ul li .content h3 {
+  margin: 0;
+  font-size: 12pt;
+}
+
+.bag ul li .content small {
+  color: #939393;
+}
+
+.bag ul li .final button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 13pt;
+}
+
+.bag ul li .final p {
+  color: #dfbd00;
+  font-weight: bold;
+}
+
+.bag .subtotal .left {
+  float: left;
+  padding: 15px;
+  color: #939393;
+}
+
+.bag .subtotal .right {
+  float: right;
+  padding: 15px;
+  text-align: right;
+  color: #939393;
+}
+
+.bag .subtotal .right p {
+  color: #dfbd00;
+  font-weight: bold;
+  font-size: 21pt;
+  margin: 0;
+}
+
+.bag .btn-buy {
+  margin: 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  width: 94%;
+  height: 50px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center !important;
+}
+
+.col {
+  width: 24.3%;
+  padding: 0 45px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .bag {
+    right: 2px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .bag {
+    width: 50%;
+    right: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .bag {
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .bag {
+    width: 100%;
+  }
+}

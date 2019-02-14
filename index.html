@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loja</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="text-center">Loja</h1>
+
+    <div class="text-center">
+      <div class="form-together">
+        <input class="input" type="text" placeholder="O que você precisa?">
+        <button id="btn-search" onclick="search()"><i class="fas fa-search"></i></button>
+      </div>
+      <button class="bag-icon" onClick="openBag()"><i class="fas fa-shopping-bag"></i></button>
+    </div>
+
+    <div class="search"></div>
+
+    <div class="products"></div>
+  </div>
+
+  <div class="bag">
+    <button class="bag-icon-close" onClick="closeBag()"><i class="fas fa-times"></i></button>
+
+    <h1 class="text-center"><i class="fas fa-shopping-bag"></i> <span class="qtdeSacola"></span> Sacola</h1>
+
+    <ul></ul>
+
+    <div class="subtotal">
+      <div class="left">
+        <p>Subtotal</p>
+      </div>
+      <div class="right">
+        <p>R$ <span class="preco"></span></p>
+        <small>ou em 10x de R$ <span class="parcelado"></span></small>
+      </div>
+    </div>
+
+    <button class="btn-buy">Comprar</button>
+  </div>
+  <script src="./src/js/index.js"></script>
+</body>
+
+</html>
