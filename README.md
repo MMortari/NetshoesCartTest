@@ -9,6 +9,8 @@ Objective:
 * Show the products added to the cart.
 * Persist data on page reload;
 
+## How to run the project
+Open the index.html file with the src/ folder together, just like here in GitHub.
 
 ## Products
 Object that stores the products extracted from the Json file;
